@@ -41,5 +41,17 @@
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/prefixfree.min.js"></script>
 	<script type="text/javascript" src="js/zoom-slideshow.js"></script>
+	<script>
+		$(document).ready(function() {
+		    $('#view').setZoomPicture({
+			thumbsContainer: '#pics-thumbs',
+			prevContainer: '#nav-left-thumbs',
+			nextContainer: '#nav-right-thumbs',
+			zoomContainer: '#zoom',
+			zoomLevel: 2,
+			loadMsg: 'Chargement...'
+		    }); 
+		});
+	</script>
 </body>
 </html>
