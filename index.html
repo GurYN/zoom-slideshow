@@ -1,57 +1,57 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
-<head>
-	<meta charset="UTF-8">
-	<meta name="description" content="Zoom SlideShow - jQuery Plugin" />
-	<meta name="keywords" content="vincent cibelli, vincidev, javascript, jquery, slideshow" />
-	<meta name="author" content="Vincent CIBELLI" />
-	<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" charset="utf-8"/>
-	<title>Zoom SlideShow - jQuery Plugin</title>
-</head>
-<body>
-	<div id="zoom"></div>
-	<div id="wrapper">
-		<header>
-			<h1>Zoom SlideShow - jQuery Plugin</h1>
-		</header>
-		<div id="content">
-			<div id="view">
-				<img src="media/img/Desert.jpg" alt="" />
-			</div>
-			<div id="thumbs">
-				<div id="nav-left-thumbs"><</div>
-				<div id="pics-thumbs">
-					<img src="media/img/nature1.jpg" alt="Nature1" />
-					<img src="media/img/nature2.jpg" alt="Nature2" />
-					<img src="media/img/nature3.jpg" alt="Nature3" />
-					<img src="media/img/nature4.jpg" alt="Nature4" />
-					<img src="media/img/nature5.jpg" alt="Nature5" />
-					<img src="media/img/nature6.jpg" alt="Nature6" />
-					<img src="media/img/nature7.jpg" alt="Nature7" />
-					<img src="media/img/nature8.jpg" alt="Nature8" />
-					<img src="media/img/nature9.jpg" alt="Nature9" />
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Zoom SlideShow - jQuery Plugin" />
+		<meta name="keywords" content="vincent cibelli, vincidev, javascript, jquery, slideshow" />
+		<meta name="author" content="Vincent CIBELLI" />
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="all" charset="utf-8"/>
+		<title>Zoom SlideShow - jQuery Plugin</title>
+	</head>
+	<body>
+		<div id="zoom"></div>
+		<div id="wrapper">
+			<header>
+				<h1>Zoom SlideShow - jQuery Plugin</h1>
+			</header>
+			<div id="content">
+				<div id="view">
+					<img src="media/img/Desert.jpg" alt="" />
 				</div>
-				<div id="nav-right-thumbs">></div>
+				<div id="thumbs">
+					<div id="nav-left-thumbs"><</div>
+					<div id="pics-thumbs">
+						<img src="media/img/nature1.jpg" alt="Nature1" />
+						<img src="media/img/nature2.jpg" alt="Nature2" />
+						<img src="media/img/nature3.jpg" alt="Nature3" />
+						<img src="media/img/nature4.jpg" alt="Nature4" />
+						<img src="media/img/nature5.jpg" alt="Nature5" />
+						<img src="media/img/nature6.jpg" alt="Nature6" />
+						<img src="media/img/nature7.jpg" alt="Nature7" />
+						<img src="media/img/nature8.jpg" alt="Nature8" />
+						<img src="media/img/nature9.jpg" alt="Nature9" />
+					</div>
+					<div id="nav-right-thumbs">></div>
+				</div>
 			</div>
+				<footer>MIT Licence | <a href="https://vincidev.com">vincidev.com</a> | <a href="https://github.com/GurYN/zoom-slideshow">Github repository</a></footer>
 		</div>
-			<footer>MIT Licence | <a href="https://vincidev.com">vincidev.com</a> | <a href="https://github.com/GurYN/zoom-slideshow">Github repository</a></footer>
-	</div>
-		
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/prefixfree.min.js"></script>
-	<script type="text/javascript" src="js/zoom-slideshow.js"></script>
-	<script>
-		$(document).ready(function() {
-		    $('#view').setZoomPicture({
-				thumbsContainer: '#pics-thumbs',
-				prevContainer: '#nav-left-thumbs',
-				nextContainer: '#nav-right-thumbs',
-				zoomContainer: '#zoom',
-				zoomLevel: 2,
-				loadMsg: 'Chargement...'
-		    }); 
-		});
-	</script>
-</body>
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/prefixfree.min.js"></script>
+		<script type="text/javascript" src="js/zoom-slideshow.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('#view').setZoomPicture({
+					thumbsContainer: '#pics-thumbs',
+					prevContainer: '#nav-left-thumbs',
+					nextContainer: '#nav-right-thumbs',
+					zoomContainer: '#zoom',
+					zoomLevel: 2,
+					loadMsg: 'Chargement...'
+				}); 
+			});
+		</script>
+	</body>
 </html>
