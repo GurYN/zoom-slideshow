@@ -207,17 +207,3 @@
 		}
     });
 })(jQuery);
-
-
-// Execution du plugin
-$(document).ready(function() {
-    // Initialisation du plugin jQuery
-    $('#view').setZoomPicture({
-	thumbsContainer: '#pics-thumbs',
-	prevContainer: '#nav-left-thumbs',
-	nextContainer: '#nav-right-thumbs',
-	zoomContainer: '#zoom',
-	zoomLevel: 2,
-	loadMsg: 'Chargement...'
-    }); 
-});
